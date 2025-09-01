@@ -5,6 +5,7 @@ body {
   /* remove padding and margins */
   margin: 0;
   padding: 0;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 /* Create a root container that fills the screen
