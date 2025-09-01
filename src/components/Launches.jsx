@@ -4,7 +4,7 @@ function Launches({ searchTerm, filteredData, setSearchTerm }) {
   return (
     <>
       <h1>View Launches</h1>
-      <p></p>
+      <p>Click patch to view details</p>
       <input
         type="text"
         placeholder="Search mission name..."
