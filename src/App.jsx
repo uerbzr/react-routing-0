@@ -36,10 +36,10 @@ function App() {
       <h1>SpaceX Launches (v3)</h1>
 
       <div className="container-nav-main">
-        <nav className="sidebar red">
+        <nav className="sidebar">
           <Navigation />
         </nav>
-        <main className="main green">
+        <main className="main">
           <Routes>
             <Route path="/" element={<Welcome />} />
             <Route path="/launches/:id" element={<Launch data={data} />} />

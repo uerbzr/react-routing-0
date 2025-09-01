@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 function Launches({ searchTerm, filteredData, setSearchTerm }) {
   return (
     <>
+      <h1>View Launches</h1>
+      <p></p>
       <input
         type="text"
         placeholder="Search mission name..."
@@ -10,6 +12,7 @@ function Launches({ searchTerm, filteredData, setSearchTerm }) {
         onChange={(e) => setSearchTerm(e.target.value)}
         style={{ marginBottom: "1rem", padding: "0.5rem", width: "300px" }}
       />
+
       <table>
         <thead>
           <tr>
@@ -43,6 +46,11 @@ function Launches({ searchTerm, filteredData, setSearchTerm }) {
               <td>{launch.launch_date_utc}</td>
               <td>{launch.details}</td>
               <td>{launch.launch_site.site_name_long}</td>
+              <td>
+                <a href={launch.links.video_link} target="_blank">
+                  📹
+                </a>
+              </td>
             </tr>
           ))}
         </tbody>

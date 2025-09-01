@@ -5,7 +5,7 @@ body {
   /* remove padding and margins */
   margin: 0;
   padding: 0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 /* Create a root container that fills the screen
@@ -53,14 +53,6 @@ make the child components lay out using flex, vertically stacked in a column */
   background-color: blue;
 }
 
-.red {
-  background-color: red;
-}
-
-.green {
-  background-color: green;
-}
-
 .yellow {
   background-color: yellow;
   margin: 10px;
@@ -71,16 +63,41 @@ make the child components lay out using flex, vertically stacked in a column */
 td {
   border: 1px solid black;
 }
-  .zoom-image {
-    width: 200px;
-    transition: transform 0.3s ease-in-out;
-  }
+.zoom-image {
+  width: 200px;
+  transition: transform 0.3s ease-in-out;
+}
 
-  .zoom-image:hover {
-    transform: scale(2); 
-  }
+.zoom-image:hover {
+  transform: scale(2);
+}
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.95rem;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: 600;
+  color: #333;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
 }
