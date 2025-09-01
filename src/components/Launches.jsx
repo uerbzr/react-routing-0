@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 function Launches({ searchTerm, filteredData, setSearchTerm }) {
   return (
     <>
@@ -22,6 +23,7 @@ function Launches({ searchTerm, filteredData, setSearchTerm }) {
             <td>Launch Date (UTC)</td>
             <td>Details</td>
             <td>Launch Site</td>
+            <td>Video</td>
           </tr>
         </thead>
         <tbody>

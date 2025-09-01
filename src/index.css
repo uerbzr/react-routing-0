@@ -101,3 +101,23 @@ th {
 tr:hover {
   background-color: #f9f9f9;
 }
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.member-grid li {
+  text-align: center;
+}
+
+.member-grid img.zoom-image {
+  transition: transform 0.2s ease-in-out;
+}
+
+.member-grid img.zoom-image:hover {
+  transform: scale(1.05);
+}

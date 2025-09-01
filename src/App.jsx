@@ -8,6 +8,7 @@ import Launches from "./components/Launches";
 import Welcome from "./components/Welcome";
 import Launch from "./components/Launch";
 import Navigation from "./components/Navigation";
+import Crew from "./components/Crew";
 function App() {
   const url = "https://api.spacexdata.com/v3/launches";
   const [data, setData] = useState([]);
@@ -33,7 +34,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>SpaceX Launches (v3)</h1>
+      <h1>SpaceX Viewer</h1>
 
       <div className="container-nav-main">
         <nav className="sidebar">
@@ -53,6 +54,7 @@ function App() {
                 />
               }
             />
+            <Route path="/crew" element={<Crew />} />
           </Routes>
         </main>
       </div>
