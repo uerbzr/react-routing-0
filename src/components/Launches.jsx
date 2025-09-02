@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Launches({ searchTerm, filteredData, setSearchTerm }) {
   return (
     <>
-      <h1>View Launches</h1>
+      <h1>Launches</h1>
       <p>Click patch to view details</p>
       <input
         type="text"

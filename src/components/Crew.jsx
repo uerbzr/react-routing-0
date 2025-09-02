@@ -16,6 +16,8 @@ function Crew() {
 
   return (
     <>
+      <h1>Crew</h1>
+      <p></p>
       <ul className="member-grid">
         {data.map((member, index) => (
           <li key={index}>
