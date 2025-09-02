@@ -9,6 +9,8 @@ import Welcome from "./components/Welcome";
 import Launch from "./components/Launch";
 import Navigation from "./components/Navigation";
 import Crew from "./components/Crew";
+import CrewAdd from "./components/CrewAdd";
+
 function App() {
   const url = "https://api.spacexdata.com/v3/launches";
   const [data, setData] = useState([]);
@@ -55,6 +57,7 @@ function App() {
               }
             />
             <Route path="/crew" element={<Crew />} />
+            <Route path="/crew/add" element={<CrewAdd />} />
           </Routes>
         </main>
       </div>
