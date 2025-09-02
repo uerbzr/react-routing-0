@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import React from "react";
 
 function Crew() {
-  const url = "https://api.spacexdata.com/v4/crew";
+  const url = "http://localhost:3001/crew";
   const [data, setData] = useState([]);
 
   useEffect(() => {

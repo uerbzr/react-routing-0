@@ -13,6 +13,9 @@ function Navigation() {
         <li>
           <Link to="/crew">Crew</Link>
         </li>
+        <li>
+          <Link to="/crew/add">Add Crew</Link>
+        </li>
       </ul>
     </div>
   );
